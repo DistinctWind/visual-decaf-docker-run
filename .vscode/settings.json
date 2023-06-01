@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "expected": "cpp",
+        "iostream": "cpp",
+        "type_traits": "cpp",
+        "memory": "cpp",
+        "string": "cpp"
+    },
+    "C_Cpp.default.cppStandard": "c++23",
+}
