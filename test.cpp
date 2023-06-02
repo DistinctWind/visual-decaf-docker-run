@@ -10,7 +10,7 @@ expected<int, runtime_error> string_to_int(const string& str) {
     for (int i = 0; i<str.size(); i++) {
         char current_char = str[i];
         if (!isdigit(current_char)) {
-            return unexpected{runtime_error{"Detected non-digit char"}};
+            return unexpected<runtime_error>{"Detected non-digit char"};
         }
         int current_digit = current_char - '0';
         result = result*10 + current_digit;
